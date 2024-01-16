@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>PizzaStore</title>
+</head>
+<body>
+    <!-- Models -->
+    <div class="models">
+        <div class="pizza-item">
+            <a href="">
+                <div class="pizza-item--img">
+                    <img src="" alt="">
+                </div>
+                <div class="pizza-item--add">
+                    +
+                </div>
+            </a>
+
+            <div class="pizza-item--price">$ ---</div>
+            <div class="pizza-item--name">---</div>
+            <div class="pizza-item--desc">---</div>
+        </div>
+        <!-- Cart -->
+        <div class="cart--item">
+            <img src="" alt="">
+            <div class="cart--item-name">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenus">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtplus">+</button>
+            </div>
+        </div>
+    </div>
+    <!-- Header for mobile -->
+    <header>
+        <div class="menu-openner">
+            <span>0</span>🛒
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <h1>Pizza's</h1>
+        <div class="pizza-area"></div>
+    </main>
+    <!-- Aside -->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h2>Your Pizza's</h2>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>$ --</span>
+                </div>
+                <div class="cart--totalitem descount">
+                    <span>(-10%) Descount</span>
+                    <span>$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>$ --</span>
+                </div>
+                <div class="cart--complete">Buy your Pizza's</div>
+            </div>
+        </div>
+    </aside>
+    <!-- Window Buy Area -->
+    <div class="pizzaWindowArea">
+        <div class="pizzaWindowBody">
+            <div class="pizzaInfo--cancelMobileButton">Return</div>
+            <div class="pizzaBig">
+                <img src="" alt="">
+            </div>
+            <div class="pizzaInfo">
+                <h2>--</h2>
+                <div class="pizzaInfo--desc">--</div>
+                <div class="pizzaInfo--sizearea">
+                    <div class="pizzaInfo--sector">Size</div>
+                    <div class="pizzaInfo--sizes">
+                        <div data-key="0" class="pizzaInfo--size">Small <span>--</span></div>
+                        <div data-key="1" class="pizzaInfo--size">Medium <span>--</span></div>
+                        <div data-key="2" class="pizzaInfo--size selected">Large <span>--</span></div>
+                    </div>
+                </div>
+                <div class="pizzaInfo--pircearea">
+                    <div class="pizzaInfo--sector">Price</div>
+                    <div class="pizzaInfo--price">
+                        <div class="pizzaInfo--actualPrice">$ --</div>
+                        <div class="pizzaInfo--qtarea">
+                            <button class="pizzaInfo--qtmenus">-</button>
+                            <div class="pizzaInfo--qt">1</div>
+                            <button class="pizzaInfo--qtplus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizzaInfo--addbtn">Add to Cart</div>
+                <div class="pizzaInfo--cancelbtn">Delete</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="public/js/pizzas.js"></script>
+    <script src="public/js/script.js"></script>
+</body>
+</html>
