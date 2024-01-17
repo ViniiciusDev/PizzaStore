@@ -311,3 +311,244 @@ h2
     cursor: pointer;
     margin-right: 30px;
 }
+
+.pizzaInfo--addbtn:hover
+{
+    background-color: #32a345;
+}
+
+.pizzaInfo--cancelbtn
+{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pizzaInfo--cancelMobileButton
+{
+    display: none;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.cart
+{
+    margin-bottom: 20px;
+}
+
+.cart--item
+{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.cart--item img
+{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.cart--item-name
+{
+    flex: 1;
+}
+
+.cart--item--qtarea
+{
+    display: inline-flex;
+    background-color: #eee;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.cart--item--qtarea button
+{
+    border: 0;
+    background-color: transparent;
+    font-size: 17px;
+    outline: 0;
+    cursor: pointer;
+    padding: 0px 5px;
+    color: #333;
+}
+
+.cart--item--qtarea
+{
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 5px;
+    color: #000;
+}
+
+.cart--totalitem
+{
+    padding: 15px 0;
+    border-top: 1px solid #79b9dd;
+    color: #315970;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.cart--totalitem span:first-child
+{
+    font-weight: bold;
+}
+
+.cart--totalitem.big
+{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.cart--complete
+{
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: #48d05f;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #63f77c;
+    transition: all ease .2s;
+}
+
+.cart--complete:hover
+{
+    background-color: #35af4a;
+}
+
+/* Media queries 1000px */
+
+@media (max-width:1000px)
+{
+    .pizza-area
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media queries 840px */
+
+@media (max-width: 840px)
+{
+    body
+    {
+        flex-direction: column;
+    }
+
+    .pizza-area
+    {
+        display: block;
+    }
+
+    .pizza-item
+    {
+        max-width: 100%;
+    }
+
+    header
+    {
+        display: flex;
+    }
+
+    main
+    {
+        padding-top: 60px;
+    }
+
+    aside
+    {
+        width: auto;
+        position: fixed;
+        left: 100vw;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all ease .2s;
+    }
+
+    aside.show
+    {
+        width: auto;
+    }
+
+    .cart--area
+    {
+        width: 100vw;
+    }
+
+    .menu-closer
+    {
+        display: block;
+    }
+
+    .pizzaWindowArea
+    {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .pizzaWindowBody
+    {
+        width: 100vw;
+        display: block;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .pizzaBig img
+    {
+        width: 75%;
+        height: auto;
+    }
+
+    .pizzaInfo h2
+    {
+        margin-top: 20px;
+    }
+
+    .pizzaInfo--area
+    {
+        height: 60px;
+    }
+
+    .pizzaInfo--qtarea button
+    {
+        font-size: 25px;
+        padding: 0 25px;
+    }
+
+    .pizzaInfo--qt
+    {
+        line-height: 60px;
+        font-size: 20px;
+    }
+
+    .pizzaInfo--addbtn
+    {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .pizzaInfo--cancelbtn
+    {
+        display: none;
+    }
+
+    .pizzaInfo--cancelMobileButton
+    {
+        display: block;
+    }
+
+}
